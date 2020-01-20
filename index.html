@@ -10,23 +10,54 @@
 
 <body>
     <!--header-->
-    <nav>
-        <p>Already have an Intuit account?</p>
-        <a href="https://accounts.intuit.com/account-recovery.html?offering_id=Intuit.ifs.mint&namespace_id=50000026&redirect_url=https%3A%2F%2Fmint.intuit.com%2Foverview.event%3Ftask%3DS">
-            <p>I forgot my User ID or Password</p>
-        </a>
+    <nav class="navbar">
         <a href="https://accounts.intuit.com/index.html?offering_id=Intuit.ifs.mint&namespace_id=50000026&redirect_url=https%3A%2F%2Fmint.intuit.com%2Foverview.event%3Ftask%3DS">
-            <img src="https://pngimage.net/wp-content/uploads/2018/06/sign-in-png-5.png">
+            <button id="signin" type="button">Sign In</button>
+        </a>
+        <p class="text">Already have an Intuit account?</p>
+        <a href="https://accounts.intuit.com/account-recovery.html?offering_id=Intuit.ifs.mint&namespace_id=50000026&redirect_url=https%3A%2F%2Fmint.intuit.com%2Foverview.event%3Ftask%3DS">
+            <p class="text">I forgot my User ID or Password</p>
         </a>
     </nav>
     <!--form area-->
-    <section>
-        <img src="https://sampajanno.github.io/building-forms/images/logo.png">
-    </section>
-    <!--footer-->
-    <footer>
 
+    <img id="logo" src="https://sampajanno.github.io/building-forms/images/logo.png">
+
+    <main id="form">
+        <h1>Create an Intuit account</h1>
+        <h3>One account for everything Intuit, including Mint.</h3>
+        <h3><a href="https://accounts-help.lc.intuit.com/questions/1582580-creating-an-account">Learn more</a></h3>
+        <form action="#" method="post">
+            <label for="email">Email address</label>
+            <input type="email" name="email" id="email">
+
+            <label id="tele" for="phone">Phone (recommended)</label>
+            <input type="tel" name="phone" id="phone">
+            <small id="small-text">Standard call, messaging or data rates may apply.</small>
+
+            <label for="password">Password</label>
+            <input type="password" name="password" id="passord">
+
+            <button type="submit">Create Account</button>
+        </form>
+        <section id="terms">
+            By clicking Create account, you agree to our <a href="https://www.mint.com/terms">Terms</a> and have read and acknowledge our
+            <a href="https://www.intuit.com/privacy/">Privacy Statement.</a>
+        </section>
+        <section id="small">
+            <small>Invisible reCAPTCHA by Google <a href="https://policies.google.com/privacy?hl=en">Privacy Policy</a> and
+            <a href="https://policies.google.com/terms?hl=en">Terms of Use.</a>
+        </small>
+        </section>
+    </main>
+
+    <!---
+    <footer>
+        <span id="legal"><a href="#">Legal</a> <a href="#">Privacy</a> <a href="#">Security</a></span>
+        <p>© 2020 Intuit, Inc. All rights reserved. Intuit, QuickBooks, QB, TurboTax, ProConnect and Mint are registered trademarks of Intuit Inc.</p><br>
+        <p>Terms and conditions, features, support, pricing, and service options subject to change without notice.</p>
     </footer>
+                -->
 </body>
 
 </html>
