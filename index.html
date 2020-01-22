@@ -12,7 +12,7 @@
     <!--header-->
     <nav class="navbar">
 
-        <button id="signin" type="button" onclick="window.location.href='https://accounts.intuit.com/index.html?offering_id=Intuit.ifs.mint&namespace_id=50000026&redirect_url=https://mint.intuit.com/overview.event%253Ftask=S';">Sign In</button>
+        <button id="signin"  type="button"  onclick="window.location.href='https://accounts.intuit.com/index.html?offering_id=Intuit.ifs.mint&namespace_id=50000026&redirect_url=https://mint.intuit.com/overview.event%253Ftask=S';">Sign In</button>
 
         <p class="text">Already have an Intuit account?</p>
         <a href="https://accounts.intuit.com/account-recovery.html?offering_id=Intuit.ifs.mint&namespace_id=50000026&redirect_url=https%3A%2F%2Fmint.intuit.com%2Foverview.event%3Ftask%3DS">
@@ -26,7 +26,7 @@
     <main id="form">
         <h1>Create an Intuit account</h1>
         <h3>One account for everything Intuit, including Mint.</h3>
-        <h3><a href="https://accounts-help.lc.intuit.com/questions/1582580-creating-an-account">Learn more</a></h3>
+        <h3><a href="https://accounts-help.lc.intuit.com/questions/1582580-creating-an-account" style="text-decoration: none;">Learn more</a></h3>
         <form action="#" method="post">
             <label for="email">Email address</label>
             <input type="email" name="email" id="email">
@@ -40,15 +40,16 @@
 
             <button type="submit">Create Account</button>
         </form>
-        <section id="terms">
+        <div id="terms">
             By clicking Create account, you agree to our <a href="https://www.mint.com/terms">Terms</a> and have read and acknowledge our
             <a href="https://www.intuit.com/privacy/">Privacy Statement.</a>
-        </section>
-        <section id="small">
+        </div>
+        <div
+         id="small">
             <small>Invisible reCAPTCHA by Google <a href="https://policies.google.com/privacy?hl=en">Privacy Policy</a> and
             <a href="https://policies.google.com/terms?hl=en">Terms of Use.</a>
         </small>
-        </section>
+    </div>
     </main>
 
     <footer id="legal">
